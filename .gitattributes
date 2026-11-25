@@ -1,0 +1,8 @@
+# Preserve the bytes of the verified files across Git checkouts.
+meshassert.py -text
+checkers/** -text
+fixtures/** -text
+
+# The two original scripts contain both LF and CRLF line endings.
+meshassert.py whitespace=cr-at-eol
+fixtures/mounting-plate/regenerate.py whitespace=cr-at-eol
