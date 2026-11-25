@@ -55,3 +55,7 @@ The script runs nine cases twice, covering both nominal pairs, each out-of-toler
 - The ribbed-bracket [contract](fixtures/ribbed-bracket/expected.json), [CAD source](fixtures/ribbed-bracket/ribbed_bracket.py), [STEP](fixtures/ribbed-bracket/ribbed_bracket.step) and mesh exports come from the GLB Dimension Check [ribbed-bracket example at `4b957e835e8285912211c14a5cb0deccfc616d8f`](https://github.com/LeeJUNhao791/glb-dimension-check/tree/4b957e835e8285912211c14a5cb0deccfc616d8f/examples/meshassert-ribbed-bracket). Its taller GLB control raises the upright from 35 to 37 mm.
 - The Mesh Guard measurement module and STL CLI come from the [`811a795e0f382cde7e89a2c887b292aec64d4529` revision](https://github.com/LeeJUNhao791/mesh-guard/tree/811a795e0f382cde7e89a2c887b292aec64d4529) and retain the [original MIT notice](checkers/mesh-guard/LICENSE).
 - The GLB checker comes from the [`18ceb7485c43fde4f16a3ac1b394dfd29a9db105` revision](https://github.com/LeeJUNhao791/glb-dimension-check/tree/18ceb7485c43fde4f16a3ac1b394dfd29a9db105) and retains the [original MIT notice](checkers/glb-dimension-check/LICENSE), also present at the two GLB Dimension Check example revisions above.
+
+## License
+
+The project code and CAD examples are available under the [MIT License](LICENSE). The bundled checkers retain the notices listed above.
