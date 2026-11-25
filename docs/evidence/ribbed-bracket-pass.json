@@ -1,0 +1,67 @@
+{
+  "contract": "examples/meshassert-ribbed-bracket/fixtures/expected.json",
+  "axis_frame": "cad",
+  "assets": {
+    "stl": {
+      "file": "examples/meshassert-ribbed-bracket/fixtures/ribbed_bracket.stl",
+      "role": "manufacturing_mesh",
+      "coordinate_unit": "mm",
+      "source_axes": {
+        "x": "x",
+        "y": "y",
+        "z": "z"
+      },
+      "status": "pass",
+      "dimensions_mm": {
+        "x": 57,
+        "y": 29,
+        "z": 35
+      },
+      "deviation_mm": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "within_tolerance": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "out_of_tolerance_axes": []
+    },
+    "glb": {
+      "file": "examples/meshassert-ribbed-bracket/fixtures/candidate.glb",
+      "role": "preview_asset",
+      "coordinate_unit": "m",
+      "source_axes": {
+        "x": "x",
+        "y": "z",
+        "z": "y"
+      },
+      "status": "pass",
+      "dimensions_mm": {
+        "x": 57.00000002980232,
+        "y": 28.999999165534973,
+        "z": 35.00000014901161
+      },
+      "deviation_mm": {
+        "x": 2.9802322387695312e-08,
+        "y": -8.344650268554688e-07,
+        "z": 1.4901161193847656e-07
+      },
+      "within_tolerance": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "out_of_tolerance_axes": []
+    }
+  },
+  "expected_mm": {
+    "x": 57.0,
+    "y": 29.0,
+    "z": 35.0
+  },
+  "tolerance_mm": 0.15,
+  "status": "pass"
+}

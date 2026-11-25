@@ -4,7 +4,7 @@ Check the overall width, depth, and height of a manufacturing STL and its previe
 
 [![MeshAssert demonstration where a 35 mm GLB passes, a 37 mm GLB fails CAD Z, and GitHub blocks the pull request](docs/assets/meshassert-pr-gate.gif)](https://github.com/LeeJUNhao791/glb-dimension-check/pull/9)
 
-[Passing JSON report](https://github.com/LeeJUNhao791/glb-dimension-check/actions/runs/45567383613#artifacts) · [Failing JSON report](https://github.com/LeeJUNhao791/glb-dimension-check/actions/runs/45567771564#artifacts)
+[Passing JSON report](docs/evidence/ribbed-bracket-pass.json) · [Failing JSON report](docs/evidence/ribbed-bracket-fail.json)
 
 ## Run the included examples
 

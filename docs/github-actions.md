@@ -60,7 +60,9 @@ Open the Actions run and download **meshassert-dimensions** under **Artifacts**.
 
 The independent consumer PR used a 57 × 29 × 35 mm contract with ±0.15 mm tolerance per axis. Its **MeshAssert dimensions** job was required on the verification branch. [Consumer PR #9](https://github.com/LeeJUNhao791/glb-dimension-check/pull/9)
 
-| GLB height | Result | JSON report |
-| --- | --- | --- |
-| 35 mm | Both models passed. | [Passing run](https://github.com/LeeJUNhao791/glb-dimension-check/actions/runs/45567383613#artifacts) |
-| 37 mm | GLB failed on CAD Z, STL passed, and GitHub blocked the merge. | [Failing run](https://github.com/LeeJUNhao791/glb-dimension-check/actions/runs/45567771564#artifacts) |
+The stored JSON files come from the linked CI runs. Paths are relative to the consumer repository.
+
+| GLB height | Result | JSON report | Source CI run |
+| --- | --- | --- | --- |
+| 35 mm | Both models passed. | [Passing JSON](evidence/ribbed-bracket-pass.json) | [GitHub Actions](https://github.com/LeeJUNhao791/glb-dimension-check/actions/runs/45567383613) |
+| 37 mm | GLB failed on CAD Z, STL passed, and GitHub blocked the merge. | [Failing JSON](evidence/ribbed-bracket-fail.json) | [GitHub Actions](https://github.com/LeeJUNhao791/glb-dimension-check/actions/runs/45567771564) |
