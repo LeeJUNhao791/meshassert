@@ -2,6 +2,10 @@
 
 Check the overall width, depth, and height of a manufacturing STL and its preview GLB against one CAD dimension contract.
 
+[![MeshAssert demonstration where a 35 mm GLB passes, a 37 mm GLB fails CAD Z, and GitHub blocks the pull request](docs/assets/meshassert-pr-gate.gif)](https://github.com/LeeJUNhao791/glb-dimension-check/pull/9)
+
+[Passing JSON report](https://github.com/LeeJUNhao791/glb-dimension-check/actions/runs/45567383613#artifacts) · [Failing JSON report](https://github.com/LeeJUNhao791/glb-dimension-check/actions/runs/45567771564#artifacts)
+
 ## Run the included examples
 
 Use Python and Node.js on your PATH. Verified with Python 3.11.4 and Node.js 22.14.0. The checkers are included and the commands run offline.
