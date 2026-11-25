@@ -16,6 +16,8 @@ python meshassert.py --expect fixtures/ribbed-bracket/expected.json --stl fixtur
 | MP-001 Rev A mounting plate | 64 × 40 × 6 mm | ±0.20 mm |
 | RB-001 Rev A ribbed bracket | 57 × 29 × 35 mm | ±0.15 mm |
 
+To run these checks on pull requests, see the [GitHub Actions guide](docs/github-actions.md).
+
 ## Inputs and outputs
 
 The UTF-8 contract specifies CAD-axis spans in millimetres. Each value must be a finite, nonnegative JSON number. The shared `tolerance_mm` defaults to 0.1 mm when omitted.
