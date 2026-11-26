@@ -20,6 +20,8 @@ python meshassert.py --expect fixtures/ribbed-bracket/expected.json --stl fixtur
 | MP-001 Rev A mounting plate | 64 × 40 × 6 mm | ±0.20 mm |
 | RB-001 Rev A ribbed bracket | 57 × 29 × 35 mm | ±0.15 mm |
 
+To check your own files, see [Check your STL and GLB exports](docs/check-your-exports.md).
+
 To run these checks on pull requests, see the [GitHub Actions guide](docs/github-actions.md).
 
 ## Inputs and outputs
