@@ -1,5 +1,11 @@
 # MeshAssert
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
+[![CI](https://github.com/LeeJUNhao791/meshassert/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/LeeJUNhao791/meshassert/actions/workflows/ci.yml)
+[![Release v0.1.1](https://img.shields.io/badge/release-v0.1.1-blue)](https://github.com/LeeJUNhao791/meshassert/releases/tag/v0.1.1)
+[![MIT License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 Check the overall width, depth, and height of a manufacturing STL and its preview GLB against one CAD dimension contract.
 
 [![MeshAssert demonstration where a 35 mm GLB passes, a 37 mm GLB fails CAD Z, and GitHub blocks the pull request](docs/assets/meshassert-pr-gate.gif)](https://github.com/LeeJUNhao791/glb-dimension-check/pull/9)
@@ -39,6 +45,8 @@ STL uses the CAD Z-up frame and takes an explicit `--stl-unit mm` or `--stl-unit
 
 The check measures the three axis-aligned outer spans. Verify hole sizes and positions, cutouts, mirroring, and mesh topology separately.
 
+A passing report confirms only those digital dimensions; it does not certify a manufactured part.
+
 After parsing the command-line arguments, MeshAssert prints one JSON report on stdout. It contains `status`, `contract`, `axis_frame` and both entries in `assets`. With a valid contract it also reports `expected_mm` and `tolerance_mm`. Each asset includes its path in `file`, `role`, `coordinate_unit`, `source_axes` and `status`. A measured asset adds `dimensions_mm`, signed `deviation_mm` (actual minus expected), `within_tolerance` and `out_of_tolerance_axes`. An invalid asset reports an `error`. A contract error makes both assets invalid and adds a top-level `error`.
 
 | Exit code | JSON status | Result |
@@ -56,6 +64,10 @@ python verify.py
 ```
 
 The script runs nine cases twice, covering both nominal pairs, each out-of-tolerance export, malformed assets and a malformed contract. It checks the exit codes, asset results and repeatability of the JSON output.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the verification command, scope, and bug-report details.
 
 ## Sources and notices
 

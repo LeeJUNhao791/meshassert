@@ -1,0 +1,8 @@
+# Python caches and local virtual environments
+__pycache__/
+*.pyc
+/.venv/
+/venv/
+
+# Node.js local dependencies
+node_modules/
