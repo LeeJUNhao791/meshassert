@@ -4,6 +4,7 @@ Dates are GitHub Release publication dates in UTC.
 
 ## Unreleased
 
+- Add an optional local, read-only MCP stdio tool that returns the existing CLI's complete JSON report and exit code, with official-client tests and bilingual setup guidance.
 - Make the release badges track the latest published GitHub Release.
 - Add a guide for checking STL and GLB exports from one CAD revision, using drawing dimensions, CAD axes, explicit STL units, and per-file JSON results. Include Hammond 1590B and failing ribbed-bracket examples. [#4](https://github.com/LeeJUNhao791/meshassert/pull/4)
 - Add a Chinese quickstart, clearer result interpretation, contribution guidance, and issue/pull request templates. The documented scope remains overall digital X/Y/Z spans, not manufactured-part certification. [#5](https://github.com/LeeJUNhao791/meshassert/pull/5)

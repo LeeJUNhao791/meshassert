@@ -30,6 +30,8 @@ To check your own files, see [Check your STL and GLB exports](docs/check-your-ex
 
 To run these checks on pull requests, see the [GitHub Actions guide](docs/github-actions.md).
 
+For the optional local, read-only MCP stdio tool, see [MCP setup and trial](docs/mcp.md). The CLI above does not require the MCP dependency.
+
 ## Inputs and outputs
 
 The UTF-8 contract specifies CAD-axis spans in millimetres. Each value must be a finite, nonnegative JSON number. The shared `tolerance_mm` defaults to 0.1 mm when omitted.
