@@ -3,7 +3,7 @@
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 [![CI](https://github.com/LeeJUNhao791/meshassert/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/LeeJUNhao791/meshassert/actions/workflows/ci.yml)
-[![Release v0.1.1](https://img.shields.io/badge/release-v0.1.1-blue)](https://github.com/LeeJUNhao791/meshassert/releases/tag/v0.1.1)
+[![Release](https://img.shields.io/github/v/release/LeeJUNhao791/meshassert)](https://github.com/LeeJUNhao791/meshassert/releases/latest)
 [![MIT License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 用同一份 CAD 尺寸约定，检查用于制造的 STL 及其预览 GLB 的整体宽度、深度和高度。
