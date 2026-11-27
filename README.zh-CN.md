@@ -30,6 +30,8 @@ python meshassert.py --expect fixtures/ribbed-bracket/expected.json --stl fixtur
 
 在拉取请求中运行检查，请参阅 [GitHub Actions 指南](docs/github-actions.md)（英文）。
 
+可选的本地只读 MCP stdio 工具，请参阅 [MCP 配置与试用](docs/mcp.zh-CN.md)。以上命令行检查无需安装 MCP 依赖。
+
 ## 输入和输出
 
 UTF-8 编码的尺寸约定以毫米指定 CAD 各轴的整体跨度。每个值必须是有限、非负的 JSON 数字。共用的 `tolerance_mm` 在省略时默认为 0.1 mm。
