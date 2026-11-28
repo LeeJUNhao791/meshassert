@@ -4,7 +4,7 @@ Check both exports from one CAD revision against the overall dimensions agreed f
 
 ## Prepare the exports
 
-Use Python and Node.js on your PATH. Download **Source code (zip)**, extract the whole archive, and open a shell in the extracted `meshassert-0.1.1` folder. [MeshAssert v0.1.1](https://github.com/LeeJUNhao791/meshassert/releases/tag/v0.1.1)
+Use Python and Node.js on your PATH. Download **Source code (zip)**, extract the whole archive, and open a shell in the extracted `meshassert-0.2.0` folder. [MeshAssert v0.2.0](https://github.com/LeeJUNhao791/meshassert/releases/tag/v0.2.0)
 
 Create an `inputs` folder. Copy your STL and GLB exports there as `part.stl` and `part.glb`. Keep the STL in the original CAD axes. Export the GLB with the standard glTF Y-up axes and metre units.
 
