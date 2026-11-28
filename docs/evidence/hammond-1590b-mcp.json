@@ -1,0 +1,389 @@
+{
+  "checked_at": "2026-11-28T11:14:46.702631+08:00",
+  "client": "Codex desktop, direct meshassert_verify MCP calls on Windows",
+  "source_revision": "9e9bf35c99f73a8e9235aeba6a32fe2e2dbb389b",
+  "manufacturer_drawing": "https://www.hammfg.com/files/parts/pdf/1590B.pdf",
+  "step_source": "https://github.com/whbeers/enclosure_kicad_footprints/blob/e59b04e1130962d179eb39395b5c85b11a5789ce/Enclosures.pretty/1590B.stp",
+  "step_sha256": "421f5d2bab1497ffb60803bf5117bea90046a2b5753a16bc0c4e1e336b2ba152",
+  "export_sha256": {
+    "hammond-1590b.glb": "364f62e05c15c5d5d89b97690305b4e1d92a97c73a507704fd7670b13031a1aa",
+    "hammond-1590b.stl": "d81a60ce28c445d47035a749711756f01bf44c18b3644b38f7859eae474cc6b0",
+    "hammond-1590b-1000x.glb": "696574709350b8c9951bbbc267759c14e428dfd6de252733cdd88ffa8c2edfe7"
+  },
+  "cad_axis_mapping": {
+    "x": "length",
+    "y": "height",
+    "z": "width"
+  },
+  "digital_comparison_tolerance_mm": 0.1,
+  "tolerance_note": "Digital comparison threshold, not a manufacturer-specified physical tolerance.",
+  "model_files_included": false,
+  "local_paths": "Report paths reduced to basenames for publication. Models remain outside this repository.",
+  "input_hashes_unchanged": true,
+  "cases": [
+    {
+      "case": "nominal",
+      "stl_unit": "mm",
+      "is_error": false,
+      "exit_code": 0,
+      "report": {
+        "contract": "dimensions.json",
+        "axis_frame": "cad",
+        "assets": {
+          "stl": {
+            "file": "hammond-1590b.stl",
+            "role": "manufacturing_mesh",
+            "coordinate_unit": "mm",
+            "source_axes": {
+              "x": "x",
+              "y": "y",
+              "z": "z"
+            },
+            "status": "pass",
+            "dimensions_mm": {
+              "x": 112.4000015258789,
+              "y": 31,
+              "z": 60.5
+            },
+            "deviation_mm": {
+              "x": 1.5258789005656581e-06,
+              "y": 0,
+              "z": 0
+            },
+            "within_tolerance": {
+              "x": true,
+              "y": true,
+              "z": true
+            },
+            "out_of_tolerance_axes": []
+          },
+          "glb": {
+            "file": "hammond-1590b.glb",
+            "role": "preview_asset",
+            "coordinate_unit": "m",
+            "source_axes": {
+              "x": "x",
+              "y": "z",
+              "z": "y"
+            },
+            "status": "pass",
+            "dimensions_mm": {
+              "x": 112.40000277757645,
+              "y": 31.00000089034438,
+              "z": 60.499999672174454
+            },
+            "deviation_mm": {
+              "x": 2.7775764408488612e-06,
+              "y": 8.903443813323975e-07,
+              "z": -3.2782554626464844e-07
+            },
+            "within_tolerance": {
+              "x": true,
+              "y": true,
+              "z": true
+            },
+            "out_of_tolerance_axes": []
+          }
+        },
+        "expected_mm": {
+          "x": 112.4,
+          "y": 31,
+          "z": 60.5
+        },
+        "tolerance_mm": 0.1,
+        "status": "pass"
+      }
+    },
+    {
+      "case": "glb_1000x",
+      "stl_unit": "mm",
+      "is_error": false,
+      "exit_code": 1,
+      "report": {
+        "contract": "dimensions.json",
+        "axis_frame": "cad",
+        "assets": {
+          "stl": {
+            "file": "hammond-1590b.stl",
+            "role": "manufacturing_mesh",
+            "coordinate_unit": "mm",
+            "source_axes": {
+              "x": "x",
+              "y": "y",
+              "z": "z"
+            },
+            "status": "pass",
+            "dimensions_mm": {
+              "x": 112.4000015258789,
+              "y": 31,
+              "z": 60.5
+            },
+            "deviation_mm": {
+              "x": 1.5258789005656581e-06,
+              "y": 0,
+              "z": 0
+            },
+            "within_tolerance": {
+              "x": true,
+              "y": true,
+              "z": true
+            },
+            "out_of_tolerance_axes": []
+          },
+          "glb": {
+            "file": "hammond-1590b-1000x.glb",
+            "role": "preview_asset",
+            "coordinate_unit": "m",
+            "source_axes": {
+              "x": "x",
+              "y": "z",
+              "z": "y"
+            },
+            "status": "fail",
+            "dimensions_mm": {
+              "x": 112400.00277757645,
+              "y": 31000.00089034438,
+              "z": 60499.999672174454
+            },
+            "deviation_mm": {
+              "x": 112287.60277757645,
+              "y": 30969.00089034438,
+              "z": 60439.499672174454
+            },
+            "within_tolerance": {
+              "x": false,
+              "y": false,
+              "z": false
+            },
+            "out_of_tolerance_axes": [
+              "x",
+              "y",
+              "z"
+            ]
+          }
+        },
+        "expected_mm": {
+          "x": 112.4,
+          "y": 31,
+          "z": 60.5
+        },
+        "tolerance_mm": 0.1,
+        "status": "fail"
+      }
+    },
+    {
+      "case": "wrong_stl_unit",
+      "stl_unit": "m",
+      "is_error": false,
+      "exit_code": 1,
+      "report": {
+        "contract": "dimensions.json",
+        "axis_frame": "cad",
+        "assets": {
+          "stl": {
+            "file": "hammond-1590b.stl",
+            "role": "manufacturing_mesh",
+            "coordinate_unit": "m",
+            "source_axes": {
+              "x": "x",
+              "y": "y",
+              "z": "z"
+            },
+            "status": "fail",
+            "dimensions_mm": {
+              "x": 112400.0015258789,
+              "y": 31000,
+              "z": 60500
+            },
+            "deviation_mm": {
+              "x": 112287.60152587891,
+              "y": 30969,
+              "z": 60439.5
+            },
+            "within_tolerance": {
+              "x": false,
+              "y": false,
+              "z": false
+            },
+            "out_of_tolerance_axes": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "glb": {
+            "file": "hammond-1590b.glb",
+            "role": "preview_asset",
+            "coordinate_unit": "m",
+            "source_axes": {
+              "x": "x",
+              "y": "z",
+              "z": "y"
+            },
+            "status": "pass",
+            "dimensions_mm": {
+              "x": 112.40000277757645,
+              "y": 31.00000089034438,
+              "z": 60.499999672174454
+            },
+            "deviation_mm": {
+              "x": 2.7775764408488612e-06,
+              "y": 8.903443813323975e-07,
+              "z": -3.2782554626464844e-07
+            },
+            "within_tolerance": {
+              "x": true,
+              "y": true,
+              "z": true
+            },
+            "out_of_tolerance_axes": []
+          }
+        },
+        "expected_mm": {
+          "x": 112.4,
+          "y": 31,
+          "z": 60.5
+        },
+        "tolerance_mm": 0.1,
+        "status": "fail"
+      }
+    },
+    {
+      "case": "wrong_axis_contract",
+      "stl_unit": "mm",
+      "is_error": false,
+      "exit_code": 1,
+      "report": {
+        "contract": "wrong-axis-contract.json",
+        "axis_frame": "cad",
+        "assets": {
+          "stl": {
+            "file": "hammond-1590b.stl",
+            "role": "manufacturing_mesh",
+            "coordinate_unit": "mm",
+            "source_axes": {
+              "x": "x",
+              "y": "y",
+              "z": "z"
+            },
+            "status": "fail",
+            "dimensions_mm": {
+              "x": 112.4000015258789,
+              "y": 31,
+              "z": 60.5
+            },
+            "deviation_mm": {
+              "x": 1.5258789005656581e-06,
+              "y": -29.5,
+              "z": 29.5
+            },
+            "within_tolerance": {
+              "x": true,
+              "y": false,
+              "z": false
+            },
+            "out_of_tolerance_axes": [
+              "y",
+              "z"
+            ]
+          },
+          "glb": {
+            "file": "hammond-1590b.glb",
+            "role": "preview_asset",
+            "coordinate_unit": "m",
+            "source_axes": {
+              "x": "x",
+              "y": "z",
+              "z": "y"
+            },
+            "status": "fail",
+            "dimensions_mm": {
+              "x": 112.40000277757645,
+              "y": 31.00000089034438,
+              "z": 60.499999672174454
+            },
+            "deviation_mm": {
+              "x": 2.7775764408488612e-06,
+              "y": -29.49999910965562,
+              "z": 29.499999672174454
+            },
+            "within_tolerance": {
+              "x": true,
+              "y": false,
+              "z": false
+            },
+            "out_of_tolerance_axes": [
+              "y",
+              "z"
+            ]
+          }
+        },
+        "expected_mm": {
+          "x": 112.4,
+          "y": 60.5,
+          "z": 31
+        },
+        "tolerance_mm": 0.1,
+        "status": "fail"
+      }
+    },
+    {
+      "case": "invalid_glb",
+      "stl_unit": "mm",
+      "is_error": false,
+      "exit_code": 2,
+      "report": {
+        "contract": "dimensions.json",
+        "axis_frame": "cad",
+        "assets": {
+          "stl": {
+            "file": "hammond-1590b.stl",
+            "role": "manufacturing_mesh",
+            "coordinate_unit": "mm",
+            "source_axes": {
+              "x": "x",
+              "y": "y",
+              "z": "z"
+            },
+            "status": "pass",
+            "dimensions_mm": {
+              "x": 112.4000015258789,
+              "y": 31,
+              "z": 60.5
+            },
+            "deviation_mm": {
+              "x": 1.5258789005656581e-06,
+              "y": 0,
+              "z": 0
+            },
+            "within_tolerance": {
+              "x": true,
+              "y": true,
+              "z": true
+            },
+            "out_of_tolerance_axes": []
+          },
+          "glb": {
+            "file": "broken.glb",
+            "role": "preview_asset",
+            "coordinate_unit": "m",
+            "source_axes": {
+              "x": "x",
+              "y": "z",
+              "z": "y"
+            },
+            "status": "invalid",
+            "error": "GLB check error: Incomplete GLB header or JSON chunk header."
+          }
+        },
+        "expected_mm": {
+          "x": 112.4,
+          "y": 31,
+          "z": 60.5
+        },
+        "tolerance_mm": 0.1,
+        "status": "invalid"
+      }
+    }
+  ]
+}

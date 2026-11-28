@@ -30,7 +30,7 @@ python meshassert.py --expect fixtures/ribbed-bracket/expected.json --stl fixtur
 
 在拉取请求中运行检查，请参阅 [GitHub Actions 指南](docs/github-actions.md)（英文）。
 
-可选的本地只读 MCP stdio 工具，请参阅 [MCP 配置与试用](docs/mcp.zh-CN.md)。以上命令行检查无需安装 MCP 依赖。
+可选的本地只读 MCP stdio 工具见 [Codex 接入与真实产品 CAD 试用](docs/mcp.zh-CN.md)。普通命令行检查无需安装 MCP 依赖。
 
 ## 输入和输出
 

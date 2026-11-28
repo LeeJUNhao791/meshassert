@@ -4,6 +4,9 @@ Dates are GitHub Release publication dates in UTC.
 
 ## Unreleased
 
+## [v0.2.0](https://github.com/LeeJUNhao791/meshassert/releases/tag/v0.2.0) - 2026-11-28
+
+- Document persistent Codex launch settings, including an explicit working directory, and record five direct desktop MCP checks on a sourced Hammond 1590B product model with input hashes.
 - Add an optional local, read-only MCP stdio tool that returns the existing CLI's complete JSON report and exit code, with official-client tests and bilingual setup guidance.
 - Make the release badges track the latest published GitHub Release.
 - Add a guide for checking STL and GLB exports from one CAD revision, using drawing dimensions, CAD axes, explicit STL units, and per-file JSON results. Include Hammond 1590B and failing ribbed-bracket examples. [#4](https://github.com/LeeJUNhao791/meshassert/pull/4)

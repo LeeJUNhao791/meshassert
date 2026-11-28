@@ -30,7 +30,7 @@ To check your own files, see [Check your STL and GLB exports](docs/check-your-ex
 
 To run these checks on pull requests, see the [GitHub Actions guide](docs/github-actions.md).
 
-For the optional local, read-only MCP stdio tool, see [MCP setup and trial](docs/mcp.md). The CLI above does not require the MCP dependency.
+For the optional local, read-only MCP stdio tool, see [Codex setup and the real-product CAD trial](docs/mcp.md). The CLI above does not require the MCP dependency.
 
 ## Inputs and outputs
 
